@@ -15,7 +15,6 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-const port = process.env.PORT || 5000;
 
 
 // DB Config
@@ -62,5 +61,6 @@ if (process.env.NODE_ENV === 'production'){
     res.sendFile(path.join(__dirname, 'client' , 'build', 'index.html'));
   });
 }
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));

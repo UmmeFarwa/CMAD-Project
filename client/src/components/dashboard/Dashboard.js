@@ -29,7 +29,7 @@ class Dashboard extends Component {
   };
   componentDidMount() {
     axios
-      .get("http://localhost:5000/api/places/viewplaces")
+      .get("api/places/viewplaces")
       .then(places => {
         this.setState(places.data);
       })
