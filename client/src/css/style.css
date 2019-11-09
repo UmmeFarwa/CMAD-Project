@@ -1,0 +1,84 @@
+.overflow{
+  overflow: hidden;
+}
+.mr-50 {
+  margin-right: 50px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-10 {
+  margin-left: 20px;
+}
+.ml-50 {
+  margin-left: 50px;
+}
+.ml-150 {
+  margin-left: 85px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.pt-70 {
+  padding-top: 70px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.btext {
+  font-weight: bold;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+
+
+.border {
+  border-radius: 20px !important;
+  overflow: hidden;
+}
+ 
+
+/*Video*/
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720)*/
+  margin-bottom:0;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*Buttons*/
+.Buttons:hover {
+  color: rgb(11, 149, 173) !important;
+}
+.Buttons {
+  margin-right: 30px;
+}
+.font25{
+  font-size:25px;
+}
