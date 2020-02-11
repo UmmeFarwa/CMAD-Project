@@ -6,7 +6,7 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
-
+import Addplace from './components/dashboard/Addplace';
 
 import Index from "./components/layout/Index";
 import Register from "./components/auth/Register";
@@ -47,6 +47,7 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/Addplace" component={Addplace} />
             </Switch>
           </div>
         </Router>

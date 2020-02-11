@@ -9,7 +9,7 @@ export default props => {
         autoPlay
         muted
         width="100%"
-        height="70%"
+        height="100%"
         fluid={false}
         className="react-player"
       >

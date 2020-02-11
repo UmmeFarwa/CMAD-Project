@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { Navbar, Nav } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 class Header extends Component {
   state = {};
   onLogoutClick = e => {
@@ -10,7 +11,7 @@ class Header extends Component {
     this.props.logoutUser();
   };
   render() {
-    
+
     return (
       <div>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -35,7 +36,31 @@ class Header extends Component {
               paddingLeft: "10px"
             }}
           >
+
             <Nav className="mr-auto"></Nav>
+
+            <Link
+              to="/dashboard"
+              style={{
+                textDecoration: "none",
+                fontSize: "20px",
+                fontWeight: "bold"
+              }}
+              className="Buttons "
+            >
+              Profile
+              </Link>
+            <Link
+              to="/Addplace"
+              style={{
+                textDecoration: "none",
+                fontSize: "20px",
+                fontWeight: "bold"
+              }}
+              className="Buttons "
+            >
+              Host a place
+              </Link>
             <Nav>
               <span
                 style={{
@@ -58,16 +83,15 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-    logoutUser: PropTypes.func.isRequired,
-    auth: PropTypes.object.isRequired
-  };
-  
-  const mapStateToProps = state => ({
-    auth: state.auth
-  });
-  
-  export default connect(
-    mapStateToProps,
-    { logoutUser }
-  )(Header);
-  
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(Header);

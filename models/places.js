@@ -11,9 +11,9 @@ const PlaceSchema = new mongoose.Schema({
     required: true
   },
   price: {
-    type: String,
-    required: true
-  },
+  type: String,
+  required: true
+   },
   file:{
     type: String,
     required: true
@@ -26,4 +26,4 @@ const PlaceSchema = new mongoose.Schema({
 
 const Places = mongoose.model('Places', PlaceSchema);
 
-module.exports = Places
+module.exports = Places;
